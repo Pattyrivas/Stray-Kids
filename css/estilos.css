@@ -1,0 +1,188 @@
+/*toda la pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1,
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* logo, menu, buscador*/
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: rgb(132, 131, 131);
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(132, 131, 131);
+}
+
+.navegador {
+    list-style: none;
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: rgb(132, 131, 131);
+}
+
+.buscador form {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+button,
+.suscribirse input,
+.buscador form input {
+    background-color: white;
+
+}
+
+/*Main index*/
+
+.introduccion .cont_introduccion,
+.album .cont_album{
+    display: flex;
+    padding: 20px;
+    font-size: small;
+}
+
+.introduccion img {
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+}
+
+
+.introduccion p,
+.album p {
+    border: solid 3px white;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+main {
+    margin: 30px;
+    padding: 10px;
+}
+
+/* footer*/
+
+footer{
+    width: 100%;
+}
+.pie_pagina .grupo_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 80px;
+    padding: 30px 30px;
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_1 .iconos a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_2 {
+    background-color: rgb(132, 131, 131);
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.pie_pagina .grupo_2 .small p {
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(132, 131, 131);
+}
+
+/*color*/
+.pie_pagina .grupo_1 .suscribirse form {
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_1 .suscribirse {
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_1 .iconos {
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_1 .iconos a:hover {
+    color: tomato;
+}
+
+.pie_pagina .grupo_2 .lema p {
+    background-color: rgb(132, 131, 131);
+}
+
+.pie_pagina .grupo_2 .lema p strong {
+    background-color: rgb(132, 131, 131);
+}
+
+
+/*Miembros*/
+
+#Miembros {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 30%);
+}
+
+.Bangchan,
+.Felix,
+.Hyunjin,
+.Leeknow,
+.IN,
+.Seungmin,
+.Changbin,
+.Han {
+    display: flex;
+    padding: 20px;
+}
+
+.Bangchan,
+.Hyunjin,
+.Seungmin,
+.Changbin {
+    text-align: right;
+
+}
