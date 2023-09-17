@@ -1,170 +1,174 @@
 /*toda la pagina*/
-* {
+*,
+body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(238, 238, 238);
 }
 
 h1,
 h2 {
     font-family: 'Fjalla One', sans-serif;
-    color: white;
+    color: rgb(178, 80, 104);
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: black;
 }
 
-/* logo, menu, buscador*/
+/* logo, navegador, buscador*/
 
 header {
     display: flex;
-    height: 70px;
-    background-color: rgb(132, 131, 131);
+    height: 60px;
+    background-color: rgb(57, 62, 70);
     justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+
+}
+
+.navbar .container-fluid .navbar-toggler span {
+    background-color: rgb(57, 62, 70);
+
 }
 
 .logo img {
-    height: 70px;
+    height: 60px;
+    width: 150px;
     display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    background-color: rgb(132, 131, 131);
+    background-color: rgb(57, 62, 70);
 }
 
-.navegador {
-    list-style: none;
-    display: flex;
-}
-
-ul li a {
+ul li a,
+.nav-link {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    padding: 10px;
-    font-family: 'Fjalla One', sans-serif;
-    background-color: rgb(132, 131, 131);
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(57, 62, 70);
+}
+
+.navbar,
+.navbar .container-fluid {
+    background-color: rgb(57, 62, 70)
 }
 
 .buscador form {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    background-color: rgb(57, 62, 70);
+    justify-content: center;
 }
 
 button,
 .suscribirse input,
 .buscador form input {
     background-color: white;
-
+    border-radius: 10px;
+    height: 25px;
+    font-size: small;
 }
 
 /*Main index*/
 
-.introduccion .cont_introduccion,
-.album .cont_album{
-    display: flex;
-    padding: 20px;
+.row .col-xl-6 img {
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.row {
+    padding-bottom: 40px;
     font-size: small;
 }
 
-.introduccion img {
-    height: 400px;
-    width: 500px;
+.row .titulo_album,
+.row .hero {
     padding: 20px;
-}
-
-
-.introduccion p,
-.album p {
-    border: solid 3px white;
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-}
-
-main {
-    margin: 30px;
-    padding: 10px;
 }
 
 /* footer*/
 
-footer{
-    width: 100%;
-}
-.pie_pagina .grupo_1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-gap: 80px;
-    padding: 30px 30px;
-    background-color: rgb(132, 131, 131);
+.pie_pagina .grupo_1,
+.pie_pagina .col-xl-6,
+.pie_pagina .grupo_1 .suscribirse,
+.pie_pagina .grupo_1 .suscribirse form,
+.pie_pagina .grupo_1 .iconos .d-flex {
+    background-color: rgb(57, 62, 70);
+    padding-top: 15px;
 }
 
-.pie_pagina .grupo_1 .iconos a {
+
+.pie_pagina .grupo_2 .lema p,
+.pie_pagina .grupo_2 .lema p strong,
+.pie_pagina .grupo_2 .row {
     color: white;
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    line-height: 45px;
-    margin-right: 10px;
+    background-color: rgb(57, 62, 70);
     text-align: center;
-    transition: all 300ms ease;
-    background-color: rgb(132, 131, 131);
-}
-
-.pie_pagina .grupo_2 {
-    background-color: rgb(132, 131, 131);
-    padding: 10px 10px;
-    text-align: center;
+    padding: 0;
+    font-size: large;
 }
 
 .pie_pagina .grupo_2 .small p {
     font-size: small;
-    padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(132, 131, 131);
-}
-
-/*color*/
-.pie_pagina .grupo_1 .suscribirse form {
-    background-color: rgb(132, 131, 131);
-}
-
-.pie_pagina .grupo_1 .suscribirse {
-    background-color: rgb(132, 131, 131);
-}
-
-.pie_pagina .grupo_1 .iconos {
-    background-color: rgb(132, 131, 131);
+    background-color: rgb(57, 62, 70);
+    color: white;
 }
 
 .pie_pagina .grupo_1 .iconos a:hover {
-    color: tomato;
+    color: rgb(178, 80, 104);
 }
 
-.pie_pagina .grupo_2 .lema p {
-    background-color: rgb(132, 131, 131);
+
+/*Discografia*/
+
+.titulo_disco {
+    padding: 20px;
 }
 
-.pie_pagina .grupo_2 .lema p strong {
-    background-color: rgb(132, 131, 131);
+.col-xl-3 {
+    padding: 20px;
 }
 
+/*tour*/
+.titulo_tour h2 {
+    padding: 30px;
+}
+
+.fechas{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    min-width: 200px;
+    height:100px ;
+}
+.fechas button{
+    width: 60px;
+    height: 30px;
+    font-size: small;
+    border-radius: 50px;
+}
+/*contenido*/
+
+.titulo_contenido h2 {
+    padding: 20px;
+}
 
 /*Miembros*/
 
-#Miembros {
+.titulo_miembros h2{
+    padding: 30px;
+}
+.integrantes {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 30%);
+    padding: 30px;
 }
 
 .Bangchan,

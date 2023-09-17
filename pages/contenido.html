@@ -3,94 +3,165 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Stray Kids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <html lang="es">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://kit.fontawesome.com/5c115362c8.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../src/straykidslogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Stray Kids</title>
+    <script src="https://kit.fontawesome.com/5c115362c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="../index.html"><img src="../src/straykidslogo.png" alt="Logo de Stray Kids" /></a>
+            <a href="../index.html"><img src="../src/straykidslogo2.png" alt="Logo de Stray Kids" /></a>
         </div>
-        <nav>
-            <ul class="navegador">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/miembros.html">Miembros</a></li>
-                <li><a href="../pages/discografia.html">Discografia</a></li>
-                <li><a href="../pages/tour.html">Tour</a></li>
-                <li><a href="../pages/contenido.html">Contenido</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boton_menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="boton_menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/miembros.html">Miembros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contenido.html">Contenido</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buscador collapse navbar-collapse" id="boton_menu">
+                <form>
+                    <input type="text" name="buscador" placeholder="Buscar...">
+                    <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
+                </form>
+            </div>
         </nav>
-        <div class="buscador">
-            <form>
-                <input type="text" name="buscador" placeholder="Buscar...">
-                <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
-            </form>
-        </div>
     </header>
-    <main>
-        <section id="Fotos">
+    <main class="container">
+        <section class="Fotos row">
             <div class="titulo_contenido">
                 <h2> Fotos </h2>
             </div>
-            <img src="https://picsum.photos/64" alt="">
-            <img src="https://picsum.photos/65" alt="">
-            <img src="https://picsum.photos/66" alt="">
-            <img src="https://picsum.photos/67" alt="">
-            <img src="https://picsum.photos/68" alt="">
-            <img src="https://picsum.photos/69" alt="">
-            <img src="https://picsum.photos/61" alt="">
-            <img src="https://picsum.photos/62" alt="">
-            <img src="https://picsum.photos/63" alt="">
-            <img src="https://picsum.photos/72" alt="">
+            <div class="col-xl-3 d-flex justify-content-center">
+                <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_all_group-1536x1229.jpg"
+                    class="img-fluid" alt="5stargrupal">
+            </div>
+            <div class="col-xl-3 d-flex justify-content-center">
+                <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_bangchan_1.jpg"
+                    class="img-fluid" alt="5starbangchan">
+            </div>
+            <div class="col-xl-3 d-flex justify-content-center">
+                <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_changbin_2.jpg"
+                    class="img-fluid" alt="5starchangbin">
+            </div>
+            <div class="col-xl-3 d-flex justify-content-center">
+                <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_felix_2.jpg"
+                    class="img-fluid" alt="5starfelix">
+            </div>
+            <div class="row">
+                <div class="col-xl-3 d-flex justify-content-center">
+                    <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_hyunjin_1.jpg"
+                        class="img-fluid" alt="5starhyunjin">
+                </div>
+                <div class="col-xl-3 d-flex justify-content-center">
+                    <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_seungmin_2.jpg"
+                        class="img-fluid" alt="5starseungmin">
+                </div>
+                <div class="col-xl-3 d-flex justify-content-center">
+                    <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_unit_bangchan_lee_know_changbin_felix.jpg"
+                        class="img-fluid" alt="5starsubgrupo1">
+                </div>
+                <div class="col-xl-3 d-flex justify-content-center">
+                    <img src="https://dbkpop.com/wp-content/uploads/2023/05/stray_kids_5_star_teaser_unit_hyunjin_han_seungmin_in.jpg"
+                        class="img-fluid" alt="5starsubgrupo2">
+                </div>
+            </div>
         </section>
-
-        <section id="Videos">
+        <section class="Videos row">
             <div class="titulo_contenido">
                 <h2> Videos </h2>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/b3GYcA7j5mg?si=lO8lCswZRM8lpMef"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-QgjT5j0AiQ?si=UNzXdvTnLJKEukaB"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PA7-ul1wp0g?si=NN835icgE-IYLTh6"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="col-xl-4 d-flex justify-content-center">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/b3GYcA7j5mg?si=lO8lCswZRM8lpMef"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-xl-4 d-flex justify-content-center">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/-QgjT5j0AiQ?si=UNzXdvTnLJKEukaB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-xl-4 d-flex justify-content-center">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/PA7-ul1wp0g?si=NN835icgE-IYLTh6"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </section>
     </main>
-    <footer>
-        <form>
-            <div class="suscribirse">
-                <input type="email" name="suscribirse" placeholder="Ingresa aqui tu e-mail...">
-                <input type="submit" value="Enviar">
+    <footer class="pie_pagina container-fluid">
+        <div class="grupo_1 row">
+            <div class="suscribirse col-xl-6 d-flex align-items-center d-flex justify-content-center">
+                <form>
+                    <input type="email" name="suscribirse" placeholder="Ingresa aqui tu e-mail...">
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
-        </form>
-        <div class="iconos">
-            <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE" class="fa-brands fa-spotify"
-                target="_blank"></a>
-            <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
-                target="_blank"></a>
-            <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram" target="_blank"></a>
-            <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
-                target="_blank"></a>
+            <div class="iconos col-xl-6">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-link">
+                        <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE"
+                            class="fa-brands fa-spotify" target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
+                            target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="lema">
-            <p><strong> Stray Kids everywhere all around the world, you make Stray Kids Stay.</strong>
-            </p>
-        </div>
-        <div class="pie_de_pagina">
-            <p> Pagina web sin fines de lucro o comerciales </p>
+        <div class="grupo_2">
+            <div class="lema row">
+                <p><strong> Stray Kids everywhere all around the world, you make Stray Kids Stay.</strong>
+                </p>
+            </div>
+            <div class="small row">
+                <p> Pagina web sin fines de lucro o comerciales </p>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -3,62 +3,88 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Stray Kids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <html lang="es">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://kit.fontawesome.com/5c115362c8.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./src/straykidslogo.png">
+    <title>Stray Kids</title>
+    <script src="https://kit.fontawesome.com/5c115362c8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./src/straykidslogo.png" alt="Logo de Stray Kids" /></a>
+            <a href="./index.html"><img src="./src/straykidslogo2.png" alt="Logo de Stray Kids" /></a>
         </div>
-        <nav>
-            <ul class="navegador">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/miembros.html">Miembros</a></li>
-                <li><a href="./pages/discografia.html">Discografía</a></li>
-                <li><a href="./pages/tour.html">Tour</a></li>
-                <li><a href="./pages/contenido.html">Contenido</a></li>
-            </ul>
-        </nav>
-        <div class="buscador">
-            <form>
-                <input type="text" name="buscador" placeholder="Buscar...">
-                <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
-            </form>
-        </div>
-    </header>
-    <main>
-
-        <section class="introduccion">
-            <div id="hero">
-                <h1>Stray Kids</h1>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boton_menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="boton_menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/miembros.html">Miembros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contenido.html">Contenido</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="cont_introduccion">
-                <img src="./src/straykidsfotogrupal.jpg" alt="Foto grupal de Stray Kids" />
+            <div class="buscador collapse navbar-collapse" id="boton_menu">
+                <form>
+                    <input type="text" name="buscador" placeholder="Buscar...">
+                    <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="row">
+            <div class="col-xl-6">
+                <img src="./src/straykidsfotogrupal.png" alt="Foto grupal de Stray Kids" />
+            </div>
+            <div class="col-xl-6 align-self-center">
+                <div class="hero">
+                    <h1>Stray Kids</h1>
+                </div>
                 <p>Stray Kids es un grupo masculino surcoreano formado en 2017 por JYP Entertainment
                     a través del reality show Stray Kids. El grupo está compuesto actualmente por ocho miembros:
                     Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin y I.N.​ Originalmente un grupo
                     de nueve, el integrante Kim Woo-jin dejaría el grupo y la agencia por motivos no especificados
                     en octubre de 2019. Stray Kids lanzó su extended play predebut Mixtape el 8 de enero de 2018
                     e hizo su debut oficial el 25 de marzo del mismo año con I Am Not.​ En septiembre de 2022
-                    fueron llamados "K-pop Leaders" por la reconocida revista Billboard. </p>
+                    fueron llamados "K-pop Leaders" por la reconocida revista Billboard. <br>La música de Stray Kids
+                    consiste principalmente de K-pop, hip hop y electrónica.​ Son considerados un grupo idol
+                    "auto-producido" con los miembros casi siempre envolviéndose en la escritura y producción de
+                    canciones e incluso arreglos musicales. ​Desde el lanzamiento de "God's Menu" en 2020, la
+                    discografía de Stray Kids ha sido descrita como "mala taste"​ y "noise music", una frase
+                    inspirada en el juego de palabras de su álbum Noeasy.</p>
                 <!--ref wikipedia:https://es.wikipedia.org/wiki/Stray_Kids -->
             </div>
         </section>
-
-        <section class="album">
-            <div id="titulo_album">
+        <section class="row">
+            <div class="titulo_album">
                 <h2> Ultimo Lanzamiento: 5-Stars</h2>
             </div>
-            <div class="cont_album">
+            <div class="col-xl-6 align-self-center">
                 <p> 5-Star (estilizado como ★★★★★) es el tercer álbum de estudio en coreano
                     (cuarto en total) de la banda de chicos surcoreana Stray Kids. Fue lanzado el 2 de junio de 2023
                     por JYP Entertainment y Republic Records, tras su séptimo EP Maxident (2022). Combinación de
@@ -67,50 +93,63 @@
                     El álbum se compone de doce temas, entre ellos el single principal
                     "S-Class", la versión coreana de "The Sound", originalmente del álbum japonés del mismo nombre
                     del grupo, y "Mixtape: Time Out" del Mixtape Project, y cuenta con la participación de
-                    Tiger JK en el tema "Topline".
+                    Tiger JK en el tema "Topline". <br>
                     En general, 5-Star recibió críticas positivas por parte de la crítica musical. Desde el punto
                     de vista comercial, el álbum alcanzó el número uno en las listas nacionales de Corea del Sur,
-                    Austria, Bélgica, Francia, Grecia, Hungría, Polonia, Portugal y Estados Unidos, además de
-                    situarse entre los diez primeros en Australia, Canadá, Finlandia, Alemania, Italia, Japón,
-                    Lituania, Países Bajos, Nueva Zelanda, España y Suiza, y recibió cinco veces el certificado
+                    Estados Unidos, entre otros, además recibir cinco veces el certificado
                     de millón de la Korea Music Content Association (KMCA).</p>
                 <!--ref wikipedia:https://en.wikipedia.org/wiki/5-Star_(Stray_Kids_album) -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JsOOis4bBFg?si=gpouJFakC-1-wJ5-"
+            </div>
+            <div class="col-xl-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JsOOis4bBFg?si=gpouJFakC-1-wJ5-"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
         </section>
     </main>
-    <footer class="pie_pagina">
-        <div class="grupo_1">
-            <div class="suscribirse">
+    <footer class="pie_pagina container-fluid">
+        <div class="grupo_1 row">
+            <div class="suscribirse col-xl-6 d-flex align-items-center d-flex justify-content-center">
                 <form>
                     <input type="email" name="suscribirse" placeholder="Ingresa aqui tu e-mail...">
                     <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="iconos">
-                <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE" class="fa-brands fa-spotify"
-                    target="_blank"></a>
-                <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
-                    target="_blank"></a>
-                <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram"
-                    target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
-                    target="_blank"></a>
+            <div class="iconos col-xl-6">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-link">
+                        <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE"
+                            class="fa-brands fa-spotify" target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram"
+                            target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
+                            target="_blank"></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="grupo_2">
-            <div class="lema">
+            <div class="lema row">
                 <p><strong> Stray Kids everywhere all around the world, you make Stray Kids Stay.</strong>
                 </p>
             </div>
-            <div class="small">
+            <div class="small row">
                 <p> Pagina web sin fines de lucro o comerciales </p>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
