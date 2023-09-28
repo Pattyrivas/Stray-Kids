@@ -24,12 +24,10 @@ header {
     height: 60px;
     background-color: rgb(57, 62, 70);
     justify-content: space-around;
-
 }
 
 .navbar .container-fluid .navbar-toggler span {
     background-color: rgb(57, 62, 70);
-
 }
 
 .logo img {
@@ -62,10 +60,15 @@ ul li a,
 button,
 .suscribirse input,
 .buscador form input {
-    background-color: white;
-    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(178, 80, 104);
+    border-radius: 5px;
     height: 25px;
     font-size: small;
+}
+
+.navbar form button {
+    width: 30px;
 }
 
 /*Main index*/
@@ -135,24 +138,19 @@ button,
     padding: 30px;
 }
 
-.fechas{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 40px;
-    margin-right: 100px;
-    margin-left: 100px;
+.fechas {
     padding-bottom: 30px;
-    flex-wrap: wrap;
-    min-width: 200px;
-    height:100px ;
+    font-size: medium;
+    text-align: center
 }
-.fechas button{
+
+.fechas button {
     width: 60px;
     height: 30px;
-    font-size: small;
-    border-radius: 50px;
+    background-color: rgb(57, 62, 70);
+    color: white;
 }
+
 /*contenido*/
 
 .titulo_contenido h2 {
@@ -161,9 +159,10 @@ button,
 
 /*Miembros*/
 
-.titulo_miembros h2{
+.titulo_miembros h2 {
     padding: 30px;
 }
+
 .integrantes {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -188,5 +187,4 @@ button,
 .Seungmin,
 .Changbin {
     text-align: right;
-
 }
