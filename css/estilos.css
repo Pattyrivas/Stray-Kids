@@ -86,10 +86,14 @@ button,
 
 .row .titulo_album,
 .row .hero {
-    padding: 20px;
+    padding: 40px;
 }
 
 /* footer*/
+
+footer{
+    padding-top: 80px;
+}
 
 .pie_pagina .grupo_1,
 .pie_pagina .col-xl-6,
@@ -97,7 +101,7 @@ button,
 .pie_pagina .grupo_1 .suscribirse form,
 .pie_pagina .grupo_1 .iconos .d-flex {
     background-color: rgb(57, 62, 70);
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 
@@ -113,7 +117,7 @@ button,
 
 .pie_pagina .grupo_2 .small p {
     font-size: small;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background-color: rgb(57, 62, 70);
     color: white;
 }
@@ -184,7 +188,22 @@ button,
 
 .Bangchan,
 .Hyunjin,
-.Seungmin,
-.Changbin {
+.Leeknow,
+.Seungmin{
     text-align: right;
+}
+/*
+.Bangchan img{
+    height: 200px;
+    width: 300px;
+}
+*/
+
+.integrantes div img{
+    height: 200px;
+    width: 300px;
+}
+
+.integrantes div p{
+    font-size: 12px;
 }
