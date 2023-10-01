@@ -170,8 +170,8 @@ footer{
 .integrantes {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 30%);
-    padding: 30px;
+    grid-template-rows: repeat(4, 25%);
+    padding: 20px;
 }
 
 .Bangchan,
@@ -192,12 +192,6 @@ footer{
 .Seungmin{
     text-align: right;
 }
-/*
-.Bangchan img{
-    height: 200px;
-    width: 300px;
-}
-*/
 
 .integrantes div img{
     height: 200px;
