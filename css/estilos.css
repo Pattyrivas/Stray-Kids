@@ -1,199 +1,226 @@
 /*toda la pagina*/
+/* line 6, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 *,
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(238, 238, 238);
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
 }
 
+/* line 13, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 h1,
 h2 {
-    font-family: 'Fjalla One', sans-serif;
-    color: rgb(178, 80, 104);
+  font-family: 'Fjalla One', sans-serif;
+  color: #b25068;
 }
 
+/* line 19, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 p {
-    font-family: 'Roboto', sans-serif;
-    color: black;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 /* logo, navegador, buscador*/
-
+/* line 26, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 header {
-    display: flex;
-    height: 60px;
-    background-color: rgb(57, 62, 70);
-    justify-content: space-around;
+  display: flex;
+  height: 60px;
+  background-color: #393e46;
+  justify-content: space-around;
 }
 
-.navbar .container-fluid .navbar-toggler span {
-    background-color: rgb(57, 62, 70);
+/* line 32, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+header .logo img {
+  height: 60px;
+  width: 130px;
+  display: flex;
+  background-color: #393e46;
 }
 
-.logo img {
-    height: 60px;
-    width: 150px;
-    display: flex;
-    background-color: rgb(57, 62, 70);
+/* line 39, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+header .navbar,
+header .navbar .container-fluid {
+  background-color: #393e46;
 }
 
+/* line 44, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+header .navbar .container-fluid .navbar-toggler span {
+  background-color: #393e46;
+}
+
+/* line 49, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 ul li a,
 .nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: medium;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(57, 62, 70);
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  background-color: #393e46;
 }
 
-.navbar,
-.navbar .container-fluid {
-    background-color: rgb(57, 62, 70)
-}
-
+/* line 58, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .buscador form {
-    display: flex;
-    background-color: rgb(57, 62, 70);
-    justify-content: center;
+  display: flex;
+  background-color: #393e46;
+  justify-content: center;
 }
 
-button,
-.suscribirse input,
+/* line 63, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .buscador form input {
-    background-color: rgb(238, 238, 238);
-    color: rgb(178, 80, 104);
-    border-radius: 5px;
-    height: 25px;
-    font-size: small;
+  background-color: #eeeeee;
+  color: #b25068;
+  border-radius: 5px;
+  height: 25px;
+  font-size: small;
 }
 
-.navbar form button {
-    width: 30px;
+/* line 71, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.buscador form button {
+  width: 30px;
+}
+
+/* line 76, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+button,
+.suscribirse input {
+  background-color: #eeeeee;
+  color: #b25068;
+  border-radius: 5px;
+  height: 25px;
+  font-size: small;
 }
 
 /*Main index*/
-
-.row .col-xl-6 img {
-    height: 100%;
-    width: 100%;
-    padding-top: 40px;
-}
-
+/* line 87, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .row {
-    padding-bottom: 40px;
-    font-size: small;
+  padding-bottom: 40px;
+  font-size: small;
 }
 
-.row .titulo_album,
+/* line 91, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .row .hero {
-    padding: 40px;
+  padding: 20px;
+}
+
+/* line 95, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.row .titulo_album {
+  padding-top: 20px;
+}
+
+/* line 99, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.row .col-xl-6 img {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
 }
 
 /* footer*/
-
+/* line 108, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 footer {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
+/* line 112, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .pie_pagina .grupo_1,
 .pie_pagina .col-xl-6,
 .pie_pagina .grupo_1 .suscribirse,
 .pie_pagina .grupo_1 .suscribirse form,
 .pie_pagina .grupo_1 .iconos .d-flex {
-    background-color: rgb(57, 62, 70);
-    padding-top: 5px;
+  background-color: #393e46;
+  padding-top: 5px;
 }
 
-
+/* line 121, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .pie_pagina .grupo_2 .lema p,
 .pie_pagina .grupo_2 .lema p strong,
 .pie_pagina .grupo_2 .row {
-    color: white;
-    background-color: rgb(57, 62, 70);
-    text-align: center;
-    padding: 0;
-    font-size: large;
+  color: white;
+  background-color: #393e46;
+  text-align: center;
+  padding: 0;
+  font-size: large;
 }
 
+/* line 131, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .pie_pagina .grupo_2 .small p {
-    font-size: small;
-    padding-bottom: 20px;
-    background-color: rgb(57, 62, 70);
-    color: white;
+  font-size: small;
+  padding-bottom: 20px;
+  background-color: #393e46;
+  color: white;
 }
 
+/* line 138, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .pie_pagina .grupo_1 .iconos a:hover {
-    color: rgb(178, 80, 104);
+  color: #b25068;
 }
-
 
 /*Discografia*/
-
+/* line 144, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .titulo_disco {
-    padding: 20px;
+  padding: 30px;
 }
 
+/* line 148, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .col-xl-3 {
-    padding: 20px;
+  padding: 20px;
 }
 
 /*tour*/
-.titulo_tour h2 {
-    padding: 30px;
+/* line 153, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.titulo_tour h1 {
+  padding: 30px;
 }
 
+/* line 157, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .fechas {
-    padding-bottom: 30px;
-    font-size: medium;
-    text-align: center
+  padding-bottom: 30px;
+  font-size: medium;
+  text-align: center;
 }
 
+/* line 162, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .fechas button {
-    width: 60px;
-    height: 30px;
-    background-color: rgb(57, 62, 70);
-    color: white;
+  width: 60px;
+  height: 30px;
+  background-color: #393e46;
+  color: white;
 }
 
 /*contenido*/
-
-.titulo_contenido h2 {
-    padding: 20px;
+/* line 172, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.titulo_contenido h1 {
+  padding: 30px;
 }
 
 /*Miembros*/
-
-.titulo_miembros h2 {
-    padding: 30px;
+/* line 178, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+.titulo_miembros h1 {
+  padding: 30px;
 }
 
+/* line 182, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .integrantes div img {
-    height: auto;
-    width: 300px;
+  height: auto;
+  width: 300px;
 }
 
+/* line 187, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .integrantes div p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
+/* line 191, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
 .Bangchan,
 .Hyunjin,
 .Leeknow,
 .Seungmin {
-    text-align: right;
+  text-align: right;
 }
 
-
 @media screen and (max-width: 1199px) {
-.integrantes div  {
-        text-align: center;
-    }
+  /* line 199, ../../../Desktop/Full stack/Docus VS/StrayKids/sass/estilos.scss */
+  .integrantes div {
+    text-align: center;
+  }
 }
-/*
-@media screen and (max-width: 1199px) {
-    .integrantes .row .Changbin, .integrantes .row .Felix {
-        display: flex;
-        flex-direction: column-reverse;
-        }
-    }
-*/
+
+/*# sourceMappingURL=estilos.css.map */

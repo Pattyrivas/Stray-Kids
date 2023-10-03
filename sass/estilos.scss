@@ -1,0 +1,202 @@
+/*toda la pagina*/
+
+$color-primario: rgb(57, 62, 70);
+$color-texto-principal: rgb(178, 80, 104);
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: $color-texto-principal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/* logo, navegador, buscador*/
+
+header {
+    display: flex;
+    height: 60px;
+    background-color: $color-primario;
+    justify-content: space-around;
+
+    .logo img {
+        height: 60px;
+        width: 130px;
+        display: flex;
+        background-color: $color-primario;
+    }
+
+    .navbar,
+    .navbar .container-fluid {
+        background-color: $color-primario;
+    }
+
+    .navbar .container-fluid .navbar-toggler span {
+        background-color: $color-primario;
+    }
+}
+
+ul li a,
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-primario;
+}
+
+.buscador form {
+    display: flex;
+    background-color: $color-primario;
+    justify-content: center;
+
+    input {
+        background-color: rgb(238, 238, 238);
+        color: $color-texto-principal;
+        border-radius: 5px;
+        height: 25px;
+        font-size: small;
+    }
+
+    button {
+        width: 30px;
+    }
+}
+
+button,
+.suscribirse input {
+    background-color: rgb(238, 238, 238);
+    color: $color-texto-principal;
+    border-radius: 5px;
+    height: 25px;
+    font-size: small;
+}
+
+/*Main index*/
+
+.row {
+    padding-bottom: 40px;
+    font-size: small;
+
+    .hero {
+        padding: 20px;
+    }
+
+    .titulo_album {
+        padding-top: 20px;
+    }
+
+    .col-xl-6 img {
+        height: 100%;
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+/* footer*/
+
+footer {
+    padding-top: 80px;
+}
+
+.pie_pagina .grupo_1,
+.pie_pagina .col-xl-6,
+.pie_pagina .grupo_1 .suscribirse,
+.pie_pagina .grupo_1 .suscribirse form,
+.pie_pagina .grupo_1 .iconos .d-flex {
+    background-color: $color-primario;
+    padding-top: 5px;
+}
+
+.pie_pagina .grupo_2 .lema p,
+.pie_pagina .grupo_2 .lema p strong,
+.pie_pagina .grupo_2 .row {
+    color: white;
+    background-color: $color-primario;
+    text-align: center;
+    padding: 0;
+    font-size: large;
+}
+
+.pie_pagina .grupo_2 .small p {
+    font-size: small;
+    padding-bottom: 20px;
+    background-color: $color-primario;
+    color: white;
+}
+
+.pie_pagina .grupo_1 .iconos a:hover {
+    color: $color-texto-principal;
+}
+
+/*Discografia*/
+
+.titulo_disco {
+    padding: 30px;
+}
+
+.col-xl-3 {
+    padding: 20px;
+}
+
+/*tour*/
+.titulo_tour h1 {
+    padding: 30px;
+}
+
+.fechas {
+    padding-bottom: 30px;
+    font-size: medium;
+    text-align: center;
+
+    button {
+        width: 60px;
+        height: 30px;
+        background-color: $color-primario;
+        color: white;
+    }
+}
+
+/*contenido*/
+
+.titulo_contenido h1 {
+    padding: 30px;
+}
+
+/*Miembros*/
+
+.titulo_miembros h1 {
+    padding: 30px;
+}
+
+.integrantes div img {
+    height: auto;
+    width: 300px;
+}
+
+.integrantes div p {
+    font-size: 12px;
+}
+
+.Bangchan,
+.Hyunjin,
+.Leeknow,
+.Seungmin {
+    text-align: right;
+}
+
+@media screen and (max-width: 1199px) {
+    .integrantes div {
+        text-align: center;
+    }
+}
