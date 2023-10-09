@@ -23,49 +23,46 @@ p {
 
 /* logo, navegador, buscador*/
 
-header {
-    display: flex;
-    height: 60px;
+nav {
     background-color: $color-primario;
-    justify-content: space-around;
 
-    .logo img {
+    img {
         height: 60px;
         width: 130px;
-        display: flex;
         background-color: $color-primario;
     }
 
-    .navbar,
-    .navbar .container-fluid {
+    .container-fluid,
+    .navbar-brand,
+    .collapse,
+    .container-fluid .navbar-toggler span {
         background-color: $color-primario;
     }
 
-    .navbar .container-fluid .navbar-toggler span {
-        background-color: $color-primario;
-    }
 }
 
 ul li a,
 .nav-link {
     text-decoration: none;
     color: white;
-    font-size: medium;
+    font-size: large;
     font-family: 'Roboto', sans-serif;
     background-color: $color-primario;
 }
 
-.buscador form {
-    display: flex;
+.collapse ul li a:hover {
+    color: $color-texto-principal;
+}
+
+form {
     background-color: $color-primario;
-    justify-content: center;
 
     input {
         background-color: rgb(238, 238, 238);
         color: $color-texto-principal;
         border-radius: 5px;
         height: 25px;
-        font-size: small;
+        font-size: medium;
     }
 
     button {
@@ -79,14 +76,14 @@ button,
     color: $color-texto-principal;
     border-radius: 5px;
     height: 25px;
-    font-size: small;
+    font-size: medium;
 }
 
 /*Main index*/
 
 .row {
     padding-bottom: 40px;
-    font-size: small;
+    padding-top: 40px;
 
     .hero {
         padding: 20px;
@@ -101,6 +98,11 @@ button,
         width: 100%;
         padding-top: 50px;
     }
+
+    .col-xl-6 p {
+        font-size: 15px;
+    }
+
 }
 
 /* footer*/
@@ -145,18 +147,32 @@ footer {
     padding: 30px;
 }
 
-.col-xl-3 {
-    padding: 20px;
+.cuerpo_principal {
+    padding-bottom: 120px;
 }
 
 /*tour*/
+
+.parallax {
+    width: 100%;
+    height: 350px;
+    background: url(../src/Grupal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .titulo_tour h1 {
     padding: 30px;
 }
 
 .fechas {
     padding-bottom: 30px;
-    font-size: medium;
+    font-size: 18px;
     text-align: center;
 
     button {
@@ -185,7 +201,7 @@ footer {
 }
 
 .integrantes div p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .Bangchan,
@@ -198,5 +214,19 @@ footer {
 @media screen and (max-width: 1199px) {
     .integrantes div {
         text-align: center;
+    }
+
+    .row .col-xl-4 iframe {
+        margin: 20px;
+        width: 100%;
+    }
+
+    form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cuerpo_principal .col-xl-3 {
+        padding: 20px;
     }
 }

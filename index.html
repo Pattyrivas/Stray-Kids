@@ -16,51 +16,50 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="./index.html"><img src="./src/straykidslogo2.png" alt="Logo de Stray Kids" /></a>
-        </div>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../src/straykidslogo2.png"
+                        alt="Logo de Stray Kids" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boton_menu"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="boton_menu">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/miembros.html">Miembros</a>
+                            <a class="nav-link" href="../pages/miembros.html">Miembros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/discografia.html">Discografía</a>
+                            <a class="nav-link" href="../pages/discografia.html">Discografía</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/tour.html">Tour</a>
+                            <a class="nav-link" href="../pages/tour.html">Tour</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contenido.html">Contenido</a>
+                            <a class="nav-link" href="../pages/contenido.html">Contenido</a>
                         </li>
                     </ul>
+                    <form>
+                        <input type="text" name="buscador" placeholder="Buscar...">
+                        <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
+                    </form>
+
                 </div>
-            </div>
-            <div class="buscador collapse navbar-collapse" id="boton_menu">
-                <form>
-                    <input type="text" name="buscador" placeholder="Buscar...">
-                    <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
-                </form>
             </div>
         </nav>
     </header>
     <main class="container">
         <section class="row">
-            <div class="col-xl-6">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-xl-6">
                 <img src="./src/straykidsfotogrupal.png" alt="Foto grupal de Stray Kids" />
             </div>
             <div class="col-xl-6 align-self-center">
@@ -73,11 +72,15 @@
                     un grupo de nueve, el integrante Kim Woo-jin dejaría el grupo y la agencia por motivos no
                     especificados
                     en octubre de 2019.<br> <strong>Stray Kids</strong> lanzó su extended play predebut Mixtape el 8 de
-                    enero de 2018 e hizo su debut oficial el 25 de marzo del mismo año con I Am Not.​ En septiembre de 2022
-                    fueron llamados <strong>"K-pop Leaders"</strong> por la reconocida revista Billboard. La música de <strong>Stray
-                        Kids</strong> consiste principalmente de K-pop, hip hop y electrónica.​ Son considerados un
-                    grupo idol <strong> "auto-producido" </strong>con los miembros casi siempre envolviéndose en la escritura y
-                    producción de canciones e incluso arreglos musicales. ​Desde el lanzamiento de "God's Menu" en 2020, la
+                    enero de 2018 e hizo su debut oficial el 25 de marzo del mismo año con I Am Not.​ En septiembre de
+                    2022
+                    fueron llamados <strong>"K-pop Leaders"</strong> por la reconocida revista Billboard. La música de
+                    <strong>Stray
+                        Kids</strong> consiste principalmente de K-pop, hip hop y electrónica.​ <br> Son considerados un
+                    grupo idol <strong> "auto-producido" </strong>con los miembros casi siempre envolviéndose en la
+                    escritura y
+                    producción de canciones e incluso arreglos musicales. ​Desde el lanzamiento de "God's Menu" en 2020,
+                    la
                     discografía de <strong>Stray Kids</strong> ha sido descrita como "mala taste"​ y "noise music", una
                     frase inspirada en el juego de palabras de su álbum Noeasy.
                 </p>
@@ -98,14 +101,15 @@
                     <br> álbum se compone de doce temas, entre ellos el single principal
                     <strong>"S-Class"</strong> y cuenta con la participación de
                     <strong> Tiger JK en el tema "Topline".</strong><br>
-                    En general,<strong> 5-Star </strong> recibió críticas positivas por parte de la crítica musical. Desde el punto
+                    En general,<strong> 5-Star </strong> recibió críticas positivas por parte de la crítica musical.
+                    Desde el punto
                     de vista comercial, el álbum alcanzó el número uno en las listas nacionales de Corea del Sur,
                     Estados Unidos, entre otros, además recibir cinco veces el certificado
                     de millón de la <strong> Korea Music Content Association (KMCA).</strong>
                 </p>
                 <!--ref wikipedia:https://en.wikipedia.org/wiki/5-Star_(Stray_Kids_album) -->
             </div>
-            <div class="col-xl-6">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-xl-6">
                 <iframe width="100%" height="300" src="https://www.youtube.com/embed/JsOOis4bBFg?si=gpouJFakC-1-wJ5-"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -125,19 +129,19 @@
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-link">
                         <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE"
-                            class="fa-brands fa-spotify" target="_blank"></a>
+                            class="fa-brands fa-spotify fa-xl" target="_blank"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
+                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr"
+                            class="fa-brands fa-facebook fa-xl" target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram fa-xl"
                             target="_blank"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram"
-                            target="_blank"></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
-                            target="_blank"></a>
+                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA"
+                            class="fa-brands fa-youtube fa-xl" target="_blank"></a>
                     </li>
                 </ul>
             </div>
@@ -155,6 +159,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

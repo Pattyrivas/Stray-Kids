@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <html lang="es">
     <link rel="shortcut icon" href="../src/straykidslogo.png">
-    <meta name="description" content="Discografía de Stray Kids, escuchar ultimos cuatro albums de estudio desde spotify">
+    <meta name="description"
+        content="Discografía de Stray Kids, escuchar ultimos cuatro albums de estudio desde spotify">
     <meta name="keywords" content="Musica, Album, 5 Star, Skz Replay, Maxident, Oddinary, Stray Kids">
     <title>Discografía Stray Kids</title>
     <script src="https://kit.fontawesome.com/5c115362c8.js" crossorigin="anonymous"></script>
@@ -21,17 +22,16 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../src/straykidslogo2.png" alt="Logo de Stray Kids" /></a>
-        </div>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../src/straykidslogo2.png"
+                        alt="Logo de Stray Kids" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boton_menu"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars fa-xs" style="color: #ffffff;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="boton_menu">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -48,18 +48,16 @@
                             <a class="nav-link" href="../pages/contenido.html">Contenido</a>
                         </li>
                     </ul>
+                    <form>
+                        <input type="text" name="buscador" placeholder="Buscar...">
+                        <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
+                    </form>
                 </div>
-            </div>
-            <div class="buscador collapse navbar-collapse" id="boton_menu">
-                <form>
-                    <input type="text" name="buscador" placeholder="Buscar...">
-                    <button><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
-                </form>
             </div>
         </nav>
     </header>
-    <main class="container">
-        <section id="Discografia" class="row">
+    <main class="container cuerpo_principal">
+        <section class="Discografia row">
             <div class="titulo_disco">
                 <h1>Discografía</h1>
             </div>
@@ -105,19 +103,19 @@
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-link">
                         <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE"
-                            class="fa-brands fa-spotify" target="_blank"></a>
+                            class="fa-brands fa-spotify fa-xl" target="_blank"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr" class="fa-brands fa-facebook"
+                        <a href="https://web.facebook.com/JYPEStrayKids/?_rdc=1&_rdr"
+                            class="fa-brands fa-facebook fa-xl" target="_blank"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram fa-xl"
                             target="_blank"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://www.instagram.com/realstraykids/?hl=es" class="fa-brands fa-instagram"
-                            target="_blank"></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" class="fa-brands fa-youtube"
-                            target="_blank"></a>
+                        <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA"
+                            class="fa-brands fa-youtube fa-xl" target="_blank"></a>
                     </li>
                 </ul>
             </div>
