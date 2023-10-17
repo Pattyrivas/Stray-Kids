@@ -10,6 +10,10 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1,
 h2 {
     font-family: 'Fjalla One', sans-serif;
@@ -63,20 +67,16 @@ form {
         border-radius: 5px;
         height: 25px;
         font-size: medium;
+        border: 10px;
     }
 
     button {
+        color: $color-texto-principal;
         width: 30px;
+        border-radius: 5px;
+        height: 25px;
+        font-size: medium;
     }
-}
-
-button,
-.suscribirse input {
-    background-color: rgb(238, 238, 238);
-    color: $color-texto-principal;
-    border-radius: 5px;
-    height: 25px;
-    font-size: medium;
 }
 
 /*Main index*/
@@ -171,15 +171,20 @@ footer {
 }
 
 .fechas {
-    padding-bottom: 30px;
     font-size: 18px;
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-color: $color-primario;
+    border-width: 1px;
 
     button {
         width: 60px;
         height: 30px;
         background-color: $color-primario;
         color: white;
+        border-radius: 10px;
+        font-size: medium;
     }
 }
 
@@ -197,7 +202,7 @@ footer {
 
 .integrantes div img {
     height: auto;
-    width: 300px;
+    width: 250px;
 }
 
 .integrantes div p {
@@ -211,9 +216,15 @@ footer {
     text-align: right;
 }
 
+/*adicionales para responsive, todas las paginas*/
+
 @media screen and (max-width: 1199px) {
     .integrantes div {
         text-align: center;
+    }
+
+    .integrantes div p {
+        padding: 15px;
     }
 
     .row .col-xl-4 iframe {
@@ -228,5 +239,9 @@ footer {
 
     .cuerpo_principal .col-xl-3 {
         padding: 20px;
+    }
+
+    .row .col-xl-3 img {
+        padding: 15px;
     }
 }
